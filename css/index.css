@@ -1,0 +1,905 @@
+html {
+    font-family: MicrosoftYaHei;
+    /* 2020年04月04日 */
+    /*filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+    -webkit-filter: grayscale(1); */
+}
+
+.carousel {
+    width: 1020px;
+    height: 618px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-view-counter {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+.cil-header {
+    /*background-color: transparent;*/
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1350px;
+    /*height: 100px;*/
+    padding: 30px 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    background-color: #000000;
+    /*transition: all 0.3s;*/
+}
+
+.scroll {
+    background-color: #000000;
+    padding: 20px 0;
+    height: 78px;
+    border-bottom: none;
+}
+
+.cil-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cil-logo {
+    float: left;
+    width: 300px;
+    height: 50px;
+    background-image: url(./static/images/logo/BDA_logo_English.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cil-logo-zh {
+    float: left;
+    width: 210px;
+    height: 50px;
+    background-image: url(./static/images/logo/BDA_logo_Chinese.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cil-navbar-zh {
+    float: right;
+}
+
+.cil-navbar-zh>ul>li {
+    float: left;
+    position: relative;
+    /*height: 53px;*/
+    line-height: 53px;
+    margin-right: 58px;
+    /*margin-right: 50px;*/
+}
+
+.cil-navbar-zh>ul {
+    list-style-type: none;
+}
+
+.cil-navbar-zh>ul>li:last-child {
+    margin-right: 0px;
+}
+
+.cil-navbar-zh>ul>li>a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Raleway;
+    opacity: 0.5;
+}
+
+.cil-navbar {
+    float: right;
+}
+
+.cil-navbar>ul>li {
+    float: left;
+    position: relative;
+    /*height: 47px;*/
+    line-height: 53px;
+    margin-right: 40px;
+    /*margin-right: 50px;*/
+}
+
+.cil-navbar>ul {
+    list-style-type: none;
+}
+
+.cil-navbar>ul>li:last-child {
+    margin-right: 0px;
+}
+
+.cil-navbar>ul>li>a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 17px;
+	font-family: Raleway;
+    opacity: 0.5;
+}
+
+.carousel-control-prev {
+    margin-left: -150px;
+}
+
+.carousel-control-next {
+    margin-right: -150px;
+}
+
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+.carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+.cil-banner {
+    height: 250px;
+    margin-top: 50px;
+    min-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-color: #f3f8fc;
+}
+
+.cil-intro {
+    width: 893px;
+    margin: 0 auto;
+}
+
+.cil-title {
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: FZLTCHK--GBK1-0;
+    text-align: center;
+    color: #000000;
+}
+
+.cil-desc {
+    margin-top: 31px;
+    color: #000000;
+    font-size: 16px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.cil-more {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.cil-sub-header {
+    height: 65px;
+    background-color: #ffffff;
+    padding: 21px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.cil-sub-header-bio {
+    height: 60px;
+    background-color: #ffffff;
+    padding: 21px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.cil-sub-logo {
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    color: #00397d;
+    width: max-content;
+}
+
+.cil-sub-navbar {
+    float: right;
+}
+
+.cil-sub-navbar>ul {
+    list-style-type: none;
+}
+
+.cil-sub-navbar>ul>li {
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 60px;
+}
+
+.cil-sub-navbar>ul>li:last-child {
+    margin-right: 0px;
+}
+
+.cil-sub-navbar>ul>li>a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.cil-more-button {
+    width: 148px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #ec6941;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.cil-total-alumni {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.cil-total-news {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.cil-news {
+    height: auto;
+    background-color: #f3f8fc;
+    min-width: 1350px;
+}
+
+.cil-news-area {
+    display:flex;
+    justify-content: left;
+    margin-left: 40px;
+}
+
+.cil-news-area a {
+    color: #42b9f1;
+}
+
+.cil-news-area li {
+    margin-top: 5px;
+}
+
+.cil-news-area ul {
+    padding-left: 29px;
+}
+
+.cil-newslist {
+    width: 95%;
+}
+
+.cil-newslist ul {
+    margin-top: 20px;
+}
+
+.cil-newslist>ul>li {
+	list-style-type:none;
+    margin-right: 60px;
+	font-size: 16px;
+}
+
+.cil-total-joinus {
+    margin: 120px auto 0 auto;
+    width: 1350px;
+}
+
+.cil-joinus {
+    height: auto;
+    background-color: #f3f8fc;
+}
+
+.cil-joinus-area {
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+}
+
+.cil-joinus-area a {
+    color: #42b9f1;
+}
+
+.cil-joinus-area li {
+    margin-top: 5px;
+}
+
+.cil-joinus-area ul {
+    padding-left: 29px;
+}
+
+.cil-joinuslist {
+    width: 100%;
+    min-width: 500px;
+}
+
+.cil-joinuslist ul {
+    margin-top: 20px;
+}
+
+.cil-joinus-business-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    /* height: 100px; */
+}
+
+.cil-joinus-business {
+    height: 50px;
+    width: 200px;
+    margin-right: 32px;
+    position: relative;
+}
+
+.img-business {
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cil-joinuslist>ul>li {
+	list-style-type:none;
+    margin-right: 60px;
+	font-size: 16px;
+}
+
+.cil-team {
+    height: auto;
+    background-color: #f3f8fc;
+    min-width: 1350px;
+}
+
+.cil-teaching {
+    height: auto;
+    background-color: #f3f8fc;
+    min-width: 1350px;
+}
+
+.cil-team-button {
+    width: 148px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #ec6941;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.cil-team h1 {
+    font-size: 24px;
+    color: #444444;
+    text-align: center;
+}
+
+.cil-team-student {
+    margin-top: 50px;
+}
+
+.cil-team-alumni {
+    margin-top: 50px;
+}
+
+.cil-member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.cil-team-faculty {
+    width: 95%;
+    margin: 20px auto 0 auto;
+}
+
+.cil-team-student {
+	    width: 96%;
+	    margin: 0 auto;
+	}
+
+.cil-team-student h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.cil-member {
+	width: 250px;
+	margin-left: 43px;
+	margin-right: 46px;
+	margin-bottom: 20px;
+}
+
+.cil-member-photo {
+	height: 186px;
+	width: 186px;
+	border-radius: 0%;
+	overflow: hidden;
+    /* position:absolute; */
+    margin-left: 32px;
+    margin-top: 10px;
+}
+
+.cil-member-name {
+    font-size: 20px;
+    color: #222222;
+    text-align: center;
+    margin-top: 20px;
+    font-family: MicrosoftYaHei-Bold;
+}
+
+.cil-member-email {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #0492cc;
+    text-align: center;
+}
+
+.cil-member-desc {
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.cil-member-honor {
+    font-size: 15px;
+    color: #999999;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.cil-member-addr {
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+}
+
+.cil-pub {
+    height: auto;
+	background-color: #f3f8fc;
+    min-width: 1350px;
+/*    background-color: #ffffff;*/
+}
+
+.cil-publist {
+    width: 100%;
+}
+
+.cil-publist>ul>li {
+/*
+	float: left;
+    height: 10px;
+    line-height: 20px;
+*/
+    margin-right: 20px;
+	font-size: 16px;
+	margin-top: 25px;
+}
+
+.cil-pub-year {
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.cil-pub-year h2 {
+    font-size: 23px;
+    color: #666666;
+}
+
+.cil-pub-year>ol>li {
+	margin-left: 20px;
+	font-size: 16px;
+	margin-top: 8px;
+}
+
+.cil-pub-area {
+    display: flex;
+    justify-content: center;
+}
+
+.cil-pub-area li {
+    margin-top: 40px;
+}
+
+.cil-pub-area ul {
+    padding-left: 29px;
+}
+
+.cil-pub-title {
+    color: #42b9f1;
+    cursor: pointer;
+}
+
+.cil-talks {
+    height: auto;
+    background-color: #f3f8fc;
+    min-width: 1350px;
+}
+
+.cil-talkslist {
+    width: 100%;
+}
+
+.cil-talkslist>ul>li {
+    margin-right: 20px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.cil-talks-year {
+    margin-top: 10px;
+    width: 960px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.cil-talks-year h2 {
+    font-size: 23px;
+    color: #666666;
+}
+
+.cil-talks-year>ol>li {
+    margin-left: 20px;
+    margin-right: 35px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.cil-talks-area {
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+}
+
+.cil-talks-area a {
+    color: #42b9f1;
+}
+
+.cil-talks-area li {
+    margin-top: 40px;
+}
+
+.cil-talks-area ul {
+    padding-left: 29px;
+}
+
+.cil-continue {
+    margin-left: 12px;
+    margin-bottom: 41px;
+}
+
+.cil-timeline {
+    width: 66px;
+    margin-top: 106px;
+    margin-left: 48px;
+    border-left: 1px solid #d2d2d2;
+}
+
+.cil-timeline {
+    width: 192px;
+}
+
+.cil-timeline .cil-timeline-item {
+    height: 16px;
+    margin-bottom: 20px; 
+}
+
+.cil-selected-timeline {
+    cursor: pointer;
+    padding-left: 24px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    border-left: 2px solid #ec6941;
+}
+
+.cil-unselected-timeline {
+    cursor: pointer;
+    padding-left: 24px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: #c2c2c2;
+}
+
+.cil-research {
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cil-research-photo {
+	height: 140px;
+    width: 140px;
+    margin: 0 auto;
+	border-radius: 0%;
+	overflow: hidden;
+}
+
+.cil-research-name {
+    font-size: 20px;
+    color: #222222;
+    text-align: center;
+    margin-top: 20px;
+    font-family: MicrosoftYaHei-Bold;
+}
+
+.cil-research-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* width: max-content; */
+    /* align-content: center; */
+    /* margin-left: 150px; */
+}
+
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.cil-footer {
+    width: 100%;
+    min-width: 1350px;
+    height: 110px;
+    margin-top: 30px;
+	/*background-color: #000000;*/
+    color:#fff;
+    background-color: #000;
+    box-shadow: 0px 0px 18px 2px 
+        rgba(158, 141, 142, 0.05);
+    /* position: inherit; */
+	border: 1px solid #707070;
+}
+
+.cil-footer-logo {
+    float: left;
+}
+
+.cil-lab-name {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-family: FZLTXHJW--GB1-0;
+    color: #ffffff;
+}
+
+.cil-lab-desc {
+    height: 8px;
+    /*line-height: 0px;*/
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-family: Raleway;
+	color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.cil-lab-copyright {
+    
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    font-size: 14px;
+	color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.icon {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    margin-right: 3px;
+}
+
+.icon-outer {
+    display:inline-block;
+    height: 18px;
+    /* background-repeat: no-repeat; */
+    background-size: 18px 55px;
+    /* margin-right: 3px; */
+}
+
+.icon-bell {
+    background-image: url("./static/images/icon/bell.png");
+}
+
+.icon-github {
+    background-image: url("./static/images/icon/github.png");
+}
+
+.icon-talk {
+    background-image: url("./static/images/icon/talk.png");
+}
+
+.icon-video {
+    background-image: url("./static/images/icon/video.png");
+}
+
+.icon-material {
+    background-image: url("./static/images/icon/material.png");
+}
+
+.icon-wanted {
+    background-image: url("./static/images/icon/wanted1.png");
+}
+
+.icon-requirement {
+    background-image: url("./static/images/icon/requirement.png");
+}
+
+.icon-topublish {
+    background-image: url("./static/images/icon/topublish.png");
+    
+}
+
+.icon-paper {
+    background-image: url("./static/images/icon/paper.png");
+}
+
+.icon-award {
+    background-image: url("./static/images/icon/award.png");
+}
+
+.btn-download {
+    padding: 0 0 !important;
+    color: #ffffff;
+    font-size: 12px !important;
+    height: 25px;
+    line-height: 25px !important;
+}
+
+.btn-download-ppt {
+    background-color: #d04423;
+    width: 58px;
+}
+
+.btn-download-github {
+    background-color: rgb(139, 124, 124);
+    width: 85px;
+}
+
+.icon-ppt {
+    background-image: url("./static/images/icon/ppt.png");
+}
+
+.btn-download-poster {
+    background-color: #ffa268;
+    width: 58px;
+}
+
+.icon-poster {
+    background-image: url("./static/images/icon/poster.png");
+}
+
+.btn-download-code{
+    background-color: #08a4ff;
+    width: 200px;
+}
+
+.btn-download-video{
+    background-color: #999999;
+    width: 60px;
+}
+
+.icon-code {
+    background-image: url("./static/images/icon/code.png");
+}
+
+.btn-download-pdf{
+    background-color: #ff301f;
+    width: 50px;
+}
+
+.icon-pdf {
+    background-image: url("./static/images/icon/pdf.png");
+}
+
+.badge-success {
+    padding: 0 0;
+    width: 30px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.btn-download-bibtex {
+    background-color: #007bff;
+    width: 60px;
+}
+
+.icon-bibtex {
+    background-image: url("./static/images/icon/bibtex.png");
+}
+
+.img-thumbnail {
+    padding: 8px 8px;
+}
+
+.card {
+    width: 100%;
+    background-color:#f3f8fc;
+    border: none;
+    color: #000000;
+}
+
+.card-header {
+    padding: 0 0;
+    border: none;
+    background-color:#f3f8fc;
+}
+
+.card-body {
+    padding: 3px 0;
+    margin: 0 0 ;
+}
+
+#accordion>ul {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+#accordion>ul>li {
+    margin: 5px 0 2px 20px;
+    padding: 0 0;
+}
+
+.ccf-A {
+    color: #000000;
+}
+
+.ccf-B {
+    color: #000000;
+}
+
+.ccf-C {
+    color: #000000;
+}
+
+.modal-open {
+    overflow-y: scroll;
+    padding-right: 0 !important;
+}
+
+.width-100-percent {
+    width: 100%;
+    margin: 0 auto;
+}
