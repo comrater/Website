@@ -1,0 +1,91 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="model.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <script src="../static/js/jquery3.4.1.min.js"></script>
+    <script src="../static/js/toastr.min.js"></script>
+    <script src="../static/js/clipboard.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <title>Qi YUAN(袁琦)</title>
+</head>
+
+<body>
+    <div id="layout-content">
+        <h1>Qi YUAN(袁琦)</h1>
+        <table class="imgtable">
+            <tr>
+                <td>
+                    <img src="../static/images/people/qiaoyangliu.png" alt="avatar" width="130px"
+                            height="130px" /></a>&nbsp;</td>
+                <td align="left">
+                    <p>Master of Engineering,<br />
+                        <a href="http://yongxintong.group">Big Data Analysis Group</a>, <br />
+                        <a href="https://www.buaa.edu.cn/info/1602/1472.htm">State Key Laboratory of Software
+                            Development Environment</a>, <br />
+                        <a href="https://scse.buaa.edu.cn">School of Computer Science and Enigneering</a>, <br />
+                        <a href="https://www.buaa.edu.cn">Beihang University (BUAA)</a><br />
+                        Haidian, Beijing, China <br /> </p>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="cil-sub-header-bio">
+            <div class="cil-sub-logo">Honors</div>
+        </div>  
+        <ol>
+            <li>
+                <p>National Scholarship</p>
+            </li>
+            <li>
+                <p>Luogeng Hua Scholarship</p>
+            </li>
+            
+        </ol>
+        <!-- <div class="cil-sub-header-bio">
+            <div class="cil-sub-logo">Intern Experience</div>
+        </div> 
+        <ol>
+            <li>
+                <p>Research Intern, Intelligent Computing Laboratory of Alibaba Dharma Academy</p>
+            </li>
+        </ol> -->
+    </div>
+    <br>
+    <div class="modal fade" id="bibtexModel">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <pre id="bibtexContent"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="getBibtex()" id="copy-btn">复制</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#bibtexModel').on('show.bs.modal', function (event) {
+            let button = $(event.relatedTarget);
+            let bibtex = button.data('content');
+            bibtex = bibtex.trim();
+            let modalBody = document.getElementById("bibtexContent");
+            modalBody.innerHTML = bibtex;
+        });
+
+        function getBibtex() {
+            let bibtex = document.getElementById("bibtexContent").innerHTML;
+            var clipboard = new ClipboardJS('.btn', {
+                text: function() {
+                    return bibtex;
+                   }
+            });
+            setTimeout("$('#bibtexModel').modal('hide')",500);//0.5s延时自动关闭
+            toastr.success("复制成功！");
+        }
+    </script>
+</body>
